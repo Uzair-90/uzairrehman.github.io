@@ -4,28 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uzair Rehman's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideIn 2s;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            animation: fadeInUp 2s;
+        }
+        #skills {
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+<body>
 
-    <header style="background-color: #4CAF50; color: white; text-align: center; padding: 20px;">
+    <header>
         <h1>Uzair Rehman</h1>
         <p>Computer Engineer</p>
     </header>
 
-    <nav style="text-align: center; padding: 10px; background-color: #f2f2f2;">
-        <a href="#about" style="margin: 0 15px; text-decoration: none; color: #333;">About</a>
-        <a href="#skills" style="margin: 0 15px; text-decoration: none; color: #333;">Skills</a>
-        <a href="#achievements" style="margin: 0 15px; text-decoration: none; color: #333;">Achievements</a>
-        <a href="#contact" style="margin: 0 15px; text-decoration: none; color: #333;">Contact</a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about" style="padding: 20px;">
+    <section id="about">
         <h2>About Me</h2>
         <p>Hello! My name is Uzair Rehman. I am a computer engineer graduated from Ghulam Ishaq Khan Institute of Engineering Sciences 
 and Technology. I specialize in databases, C/C++ programming, DevOps, web development, and AI/ML.</p>
     </section>
 
-    <section id="skills" style="padding: 20px; background-color: #f9f9f9;">
+    <section id="skills" style="background-color: #f9f9f9;">
         <h2>Skills</h2>
         <ul>
             <li><strong>Databases:</strong> Programming, schema design, query optimization</li>
@@ -36,7 +95,7 @@ and Technology. I specialize in databases, C/C++ programming, DevOps, web develo
         </ul>
     </section>
 
-    <section id="achievements" style="padding: 20px;">
+    <section id="achievements">
         <h2>Achievements</h2>
         <ul>
             <li>Certified in AI from Coursera</li>
@@ -46,7 +105,7 @@ and Technology. I specialize in databases, C/C++ programming, DevOps, web develo
         </ul>
     </section>
 
-    <footer id="contact" style="background-color: #333; color: white; text-align: center; padding: 20px;">
+    <footer id="contact">
         <h2>Contact</h2>
         <p>Email: uzair.rehmann@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/uzairrehmanyousafzai" style="color: 
